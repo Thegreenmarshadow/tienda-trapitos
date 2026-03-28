@@ -3,6 +3,11 @@
   "module": "index.ts",
   "type": "module",
   "private": true,
+  "scripts": {
+    "db:init": "npx @liam-hq/cli init",
+    "db:build": "npx @liam-hq/cli erd build --input schema.sql --format postgres",
+    "db:start": "npx serve dist/"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
